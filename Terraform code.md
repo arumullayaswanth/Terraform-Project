@@ -174,12 +174,20 @@ resource "aws_iam_user" "seven" {
   name     = each.value # The name of the IAM user.
 }
 
+# Attach the AdministratorAccess policy to each IAM user
+resource "aws_iam_user_policy_attachment" "admin_access" {
+  for_each = var.user_names
+  user     = aws_iam_user.seven[each.key].name # Attach the policy to each user.
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess" # The ARN for the AdministratorAccess policy.
+}
+
 # Define the variable "user_names" to store the list of IAM users
 variable "user_names" {
   description = "List of IAM users to be created" # A description for the variable.
   type        = set(string) # The variable is a set of strings.
   default     = ["user1", "user2", "user3", "user4"] # Default set of user names.
 }
+
 ```
 
 ## EBS Volume
