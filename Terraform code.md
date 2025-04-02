@@ -1,12 +1,27 @@
-# Terraform AWS Deployment Steps
+# Terraform AWS Deployment - Step-by-Step Guide
 
 ## Prerequisites
-- Install [Terraform](https://developer.hashicorp.com/terraform/downloads)
-- Configure AWS CLI with valid credentials using:
-  ```sh
-  aws configure
-  ```
-- Ensure you have an AWS key pair for SSH access.
+
+Before you begin, ensure you have the following installed on your system:
+
+- [Terraform](https://developer.hashicorp.com/terraform/downloads)
+- AWS CLI ([Install Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html))
+- An AWS account with proper permissions
+
+## Step 1: Configure AWS Credentials
+
+Run the following command to configure your AWS CLI with access credentials:
+
+```sh
+aws configure
+```
+
+You will be prompted to enter:
+
+- **AWS Access Key ID**
+- **AWS Secret Access Key**
+- **Default region name** (e.g., `us-east-1`)
+- **Default output format** ( table)
 
 ## Provider Configuration
 ```hcl
@@ -357,6 +372,18 @@ To remove all deployed resources, run:
 ```sh
 terraform destroy -auto-approve
 ```
+
+
+## Additional Notes
+
+- Ensure your AWS IAM role has the necessary permissions to create EC2, S3, IAM, and other resources.
+- Use `terraform fmt` to format the configuration files for better readability.
+- Use `terraform output` to view resource outputs if defined in your Terraform script.
+
+---
+
+🚀 Now you have a fully automated AWS infrastructure using Terraform! 🎉
+
 
 
 
