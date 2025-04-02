@@ -118,7 +118,7 @@ default = ["user1", "user2", "user3", "user4"]
 
 # Creates an EBS volume with encryption enabled
 resource "aws_ebs_volume" "eight" {
-  size              = 20  
+  size              = 40  
   availability_zone = "us-east-1b"  
   encrypted         = true  
   type              = "gp3"  
