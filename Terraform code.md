@@ -1,4 +1,12 @@
-# Terraform AWS Infrastructure Setup
+# Terraform AWS Deployment Steps
+
+## Prerequisites
+- Install [Terraform](https://developer.hashicorp.com/terraform/downloads)
+- Configure AWS CLI with valid credentials using:
+  ```sh
+  aws configure
+  ```
+- Ensure you have an AWS key pair for SSH access.
 
 ## Provider Configuration
 ```hcl
@@ -304,5 +312,52 @@ resource "aws_ebs_volume" "eight" {
   }
 }
 ```
+
+
+
+## Step 1: Initialize Terraform
+Run the following command in the project directory to initialize Terraform and download provider plugins:
+```sh
+terraform init
+```
+
+## Step 2: Format Terraform Code
+Ensure your Terraform configuration files are properly formatted:
+```sh
+terraform fmt
+```
+
+## Step 3: Validate Configuration
+Check if the Terraform configuration files are correctly formatted and error-free:
+```sh
+terraform validate
+```
+
+## Step 4: Plan the Deployment
+Generate and review an execution plan before applying changes:
+```sh
+terraform plan
+```
+
+## Step 5: Apply the Configuration
+Deploy the resources to AWS:
+```sh
+terraform apply -auto-approve
+```
+
+## Step 6: Verify the Deployment
+Check the deployed AWS resources through the AWS console or use:
+```sh
+aws ec2 describe-instances
+aws s3 ls
+```
+
+## Step 7: Destroy the Infrastructure (If Needed)
+To remove all deployed resources, run:
+```sh
+terraform destroy -auto-approve
+```
+
+
 
 
