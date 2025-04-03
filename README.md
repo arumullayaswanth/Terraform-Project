@@ -1,4 +1,4 @@
-# Terraform and Jenkins Setup Guide
+# Terraform and Jenkins AWS infrastructure Setup Guide
 
 ## Step 1: Launch EC2 and Install Terraform
 1. Launch an EC2 instance.
