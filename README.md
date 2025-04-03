@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td align="center" style="background-color:#f0f8ff; padding:10px;">
-      <img src="https://github.com/arumullayaswanth/Devops-Software-Installation-Project/blob/7775588ff4899874083925daf0f2f449978c495a/Pictures/Automating%20Infrastructure%20with%20Jenkins.png" width="80%">
+      <img src="https://github.com/arumullayaswanth/Devops-Software-Installation-Project/blob/7775588ff4899874083925daf0f2f449978c495a/Pictures/Automating%20Infrastructure%20with%20Jenkins.png" width="50%">
       <br><b style="color:#1f75fe;">🔵Automating Infrastructure with Jenkins</b>
     </td>
   </tr>
