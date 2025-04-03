@@ -1,5 +1,4 @@
 # Terraform with Jenkins AWS infrastructure Setup Guide
-----
 # Automating Infrastructure with Jenkins: Running Terraform Scripts using Jenkins Pipeline 
 <table>
   <tr>
@@ -9,7 +8,6 @@
     </td>
   </tr>
 </table>
----
 
 ## Step 1: Launch EC2 and Install Terraform
 1. Launch an EC2 instance.
