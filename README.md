@@ -10,7 +10,7 @@
 </table>
 
 ## Step 1: Launch EC2 and Install Terraform
-1. Launch an EC2 instance.
+1. Launch an EC2 instance.(Name:Terraform)
 2. Connect to the EC2 instance via SSH.
 3. Install Terraform on the EC2 instance.
 
