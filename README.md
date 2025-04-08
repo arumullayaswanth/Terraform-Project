@@ -122,13 +122,13 @@ Copy the password for the next step.
 2. Navigate to **Credentials** → **System** → **Global Credentials (unrestricted)**.
 3. Click **Add Credentials**:
    - **Kind**: Select **Secret Text**
-   - **Secret**: Enter your **AWS Access Key**
+   - **Secret**: Enter your **AWS Access Key**(****************)
    - **ID**: `accesskey`
    - **Description**: Enter a meaningful description
 4. Click **Save**.
 5. Add another credential:
    - **Kind**: Select **Secret Text**
-   - **Secret**: Enter your **AWS Secret Key**
+   - **Secret**: Enter your **AWS Secret Key**(******************)
    - **ID**: `secretkey`
    - **Description**: Enter a meaningful description
 6. Click **Save**.
