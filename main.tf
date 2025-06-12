@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  ami               = "ami-02f624c08a83ca16f"
+  ami               = "ami-09e6f87a47903347c"
   instance_type     = "t2.micro"
   key_name          = "my-Key pair"
   vpc_security_group_ids = [aws_security_group.web_sg.id]
@@ -22,7 +22,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami               = "ami-02f624c08a83ca16f"
+  ami               = "ami-09e6f87a47903347c"
   instance_type     = "t2.micro"
   key_name          = "my-Key pair"
   vpc_security_group_ids = [aws_security_group.web_sg.id]
@@ -41,7 +41,7 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami               = "ami-02f624c08a83ca16f"
+  ami               = "ami-09e6f87a47903347c"
   instance_type     = "t2.micro"
   key_name          = "my-Key pair"
   vpc_security_group_ids = [aws_security_group.web_sg.id]
